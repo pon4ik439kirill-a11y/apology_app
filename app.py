@@ -7,10 +7,19 @@ st.set_page_config(
     layout="centered"
 )
 
-# Кастомный CSS под стильную ТЕМНУЮ ТЕМУ
+import streamlit as st
+
+# Настройка страницы
+st.set_page_config(
+    page_title="Для Насти...",
+    page_icon="🌸",
+    layout="centered"
+)
+
+# Кастомный CSS: тёмный фон + светлые карточки
 st.markdown("""
     <style>
-    /* Главный фон страницы */
+    /* Главный фон страницы — тёмный */
     .stApp {
         background-color: #1E1E24;
         color: #E2E2E2;
@@ -33,27 +42,26 @@ st.markdown("""
         color: #1E1E24;
     }
     
-    /* Карточки с текстом */
+    /* Основные текстовые карточки — светлые */
     .card {
-        background-color: #2B2D42;
+        background-color: #FFFFFF;
         padding: 25px;
         border-radius: 18px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         margin-bottom: 20px;
-        color: #E2E2E2;
+        color: #4A4A4A;
         line-height: 1.6;
-        border: 1px solid #3A3D5A;
     }
     
-    /* Карточки качеств */
+    /* Маленькие карточки качеств — светлые */
     .feature-card {
-        background-color: #2B2D42;
+        background-color: #FFFFFF;
         padding: 20px;
         border-radius: 15px;
         text-align: center;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         margin-bottom: 15px;
-        border: 1px solid #3A3D5A;
+        border: 1px solid #F0E6DF;
     }
     .feature-icon {
         font-size: 32px;
@@ -61,14 +69,14 @@ st.markdown("""
     }
     .feature-title {
         font-weight: 600;
-        color: #E8A598;
+        color: #4A4A4A;
         font-size: 15px;
     }
     
     /* Цитата */
     .quote {
         font-style: italic;
-        color: #B8B8B8;
+        color: #8C7A6B;
         border-left: 3px solid #E8A598;
         padding-left: 15px;
         margin: 15px 0;
