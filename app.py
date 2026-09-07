@@ -7,57 +7,68 @@ st.set_page_config(
     layout="centered"
 )
 
-# Кастомный CSS
+# Кастомный CSS под стильную ТЕМНУЮ ТЕМУ
 st.markdown("""
     <style>
-    .main {
-        background-color: #FAF6F0;
+    /* Главный фон страницы */
+    .stApp {
+        background-color: #1E1E24;
+        color: #E2E2E2;
     }
+    
+    /* Стилизация кнопок */
     .stButton>button {
         width: 100%;
         border-radius: 20px;
         height: 3.2em;
         background-color: #E8A598;
-        color: white;
+        color: #1E1E24;
         border: none;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 16px;
         transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #D88A7A;
-        color: white;
+        background-color: #F0B7AB;
+        color: #1E1E24;
     }
+    
+    /* Карточки с текстом */
     .card {
-        background-color: #FFFFFF;
+        background-color: #2B2D42;
         padding: 25px;
         border-radius: 18px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         margin-bottom: 20px;
-        color: #4A4A4A;
+        color: #E2E2E2;
         line-height: 1.6;
+        border: 1px solid #3A3D5A;
     }
+    
+    /* Карточки качеств */
     .feature-card {
-        background-color: #FFFFFF;
+        background-color: #2B2D42;
         padding: 20px;
         border-radius: 15px;
         text-align: center;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         margin-bottom: 15px;
-        border: 1px solid #F0E6DF;
+        border: 1px solid #3A3D5A;
     }
     .feature-icon {
         font-size: 32px;
         margin-bottom: 8px;
     }
     .feature-title {
-        font-weight: bold;
-        color: #6C5B4C;
+        font-weight: 600;
+        color: #E8A598;
         font-size: 15px;
     }
+    
+    /* Цитата */
     .quote {
         font-style: italic;
-        color: #8C7A6B;
+        color: #B8B8B8;
         border-left: 3px solid #E8A598;
         padding-left: 15px;
         margin: 15px 0;
